@@ -111,5 +111,13 @@ int main(int argc, char *argv[])
 
     printf("===============\n"); // 结束
 
+    if (total == 0) {
+        printf("没有接收到任何帧, 请检查接口 %s 是否正确配置\n", ifname);
+        printf("可以使用 'ip link show' 查看接口状态\n");
+        printf("如果是虚拟 CAN, 请确保已运行 'scripts/setup_vcan.sh'\n");
+    }
+
+    if (total == 0) { }
+
     return 0;
 }
