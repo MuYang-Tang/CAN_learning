@@ -109,5 +109,7 @@ int main(int argc, char *argv[])
                (double)(total - filtered) / el);
     printf("===============\n");
 
+    printf("===============\n");
+
     return 0;
 }
