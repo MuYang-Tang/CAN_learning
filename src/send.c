@@ -51,6 +51,8 @@ int main(int argc, char *argv[])
     int sock;
     struct can_frame frame;
     struct timespec ts, remaining;
+    struct timespec ts, remaining;
+    struct timespec ts, remaining;
 
     while ((opt = getopt(argc, argv, "i:id:d:p:erc:h")) != -1) {
         switch (opt) {

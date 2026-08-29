@@ -1,0 +1,8 @@
+{
+  // 强制本工作区所有文件使用 LF 行尾，防止 Windows 编辑器/autocrlf 把 .sh 存成 CRLF 导致 bash 报错
+  "files.eol": "\n",
+  // shell 脚本单独再强调一次
+  "[shellscript]": {
+    "files.eol": "\n"
+  }
+}
