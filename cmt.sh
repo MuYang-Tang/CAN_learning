@@ -21,8 +21,9 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
-# 暂存所有修改（-A 会包含新增的未跟踪文件；注意：-u 只会暂存已跟踪文件，会漏掉新文件）
-git add -u
+# 暂存所有修改。必须用 -A：-u 只会暂存已跟踪文件，
+# 当存在未跟踪的新文件时会直接报 "nothing added to commit"
+git add -A
 
 # 提交
 git commit -m "$commit_msg"
